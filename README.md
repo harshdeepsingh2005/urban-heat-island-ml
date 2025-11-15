@@ -100,13 +100,13 @@ The following regression models were used:
 
 4. Model Training
 
-  - Train using:
-
-    * Train-test split
-
-    * Hyperparameter tuning
-
-    * RMSE, MAE, R² evaluation metrics
+	  - Train using:
+	
+	    * Train-test split
+	
+	    * Hyperparameter tuning
+	
+	    * RMSE, MAE, R² evaluation metrics
 
 5. Interpretation
 
