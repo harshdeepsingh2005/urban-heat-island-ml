@@ -65,38 +65,38 @@ The following regression models were used:
 ## 🏗️ Methodology
 
 1. Data Preprocessing
-
-  - Clip all rasters to Delhi boundary
-
-  - Reproject to common CRS
-
-  - Resample to 100m resolution
-
-  - Create a 100m × 100m grid
-
-  - Extract raster values for each grid cell
-
-  - Merge all features into Final_Dataset.csv
+	
+	  - Clip all rasters to Delhi boundary
+	
+	  - Reproject to common CRS
+	
+	  - Resample to 100m resolution
+	
+	  - Create a 100m × 100m grid
+	
+	  - Extract raster values for each grid cell
+	
+	  - Merge all features into Final_Dataset.csv
 
 2. Target Creation
 
-  - Urban Heat Island intensity is computed as:
-
-  - UHI = LST_pixel – mean(LST_rural_reference)
+  	- Urban Heat Island intensity is computed as:
+	
+  	- UHI = LST_pixel – mean(LST_rural_reference)
 
 3. Feature Engineering
-
-  - NDVI, NDBI, NDWI generation
-
-  - Impervious % extraction
-
-  - Tree canopy %
-
-  - LULC one-hot encoding
-
-  - Slope & aspect from DEM
-
-  - Population & night lights merging
+	
+	  - NDVI, NDBI, NDWI generation
+	
+	  - Impervious % extraction
+	
+	  - Tree canopy %
+	
+	  - LULC one-hot encoding
+	
+	  - Slope & aspect from DEM
+	
+	  - Population & night lights merging
 
 4. Model Training
 
@@ -110,17 +110,17 @@ The following regression models were used:
 
 5. Interpretation
 
-  - Feature importance (model-based)
-
-  - SHAP value plots (optional)
+	  - Feature importance (model-based)
+	
+	  - SHAP value plots (optional)
 
 6. Outputs
 
-  - UHI prediction maps
-
-  - Actual vs Predicted LST/UHI comparison
-
-  - Feature importance visualization
+	  - UHI prediction maps
+	
+	  - Actual vs Predicted LST/UHI comparison
+	
+	  - Feature importance visualization
 
 ## 📊 Results (Expected)
 
