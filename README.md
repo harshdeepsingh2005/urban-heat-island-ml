@@ -1,14 +1,14 @@
-📘 Urban Heat Island Prediction in Delhi — Supervised Machine Learning Project
-🔍 Overview
+#📘 Urban Heat Island Prediction in Delhi — Supervised Machine Learning Project
+##🔍 Overview
 
 This project builds a supervised machine learning model to predict Urban Heat Island (UHI) intensity across Delhi (India) using multi-source geospatial and environmental datasets.
 The model uses only supervised regression algorithms and focuses on identifying the key factors that drive heat intensity in urban environments.
 
-🎯 Objective
+##🎯 Objective
 
 To develop supervised machine learning models that accurately predict Urban Heat Island (UHI) intensity in Delhi using multi-layer geospatial data, and to quantify which environmental and urban features most strongly influence heat patterns.
 
-🗂️ Datasets Used (10-Layer Geo Dataset)
+##🗂️ Datasets Used (10-Layer Geo Dataset)
 
 This project integrates 10 high-quality datasets for Delhi:
 
@@ -34,7 +34,7 @@ This project integrates 10 high-quality datasets for Delhi:
 
 All datasets are clipped to the Delhi boundary and resampled to a 100m grid.
 
-🧱 Project Structure
+##🧱 Project Structure
 
           delhi-uhi-ml/
           │
@@ -45,7 +45,7 @@ All datasets are clipped to the Delhi boundary and resampled to a 100m grid.
           ├── models/             # trained supervised ML models
           └── README.md
 
-🧪 Supervised Learning Models
+##🧪 Supervised Learning Models
 
 The following regression models were used:
 
@@ -61,7 +61,7 @@ The following regression models were used:
 
 - CatBoost Regressor (optional)
 
-🏗️ Methodology
+##🏗️ Methodology
 
 1. Data Preprocessing
 
@@ -85,79 +85,79 @@ The following regression models were used:
 
 3. Feature Engineering
 
-NDVI, NDBI, NDWI generation
+- NDVI, NDBI, NDWI generation
 
-Impervious % extraction
+- Impervious % extraction
 
-Tree canopy %
+- Tree canopy %
 
-LULC one-hot encoding
+- LULC one-hot encoding
 
-Slope & aspect from DEM
+- Slope & aspect from DEM
 
-Population & night lights merging
+- Population & night lights merging
 
 4. Model Training
 
-Train using:
+- Train using:
 
-Train-test split
+   * Train-test split
 
-Hyperparameter tuning
+   * Hyperparameter tuning
 
-RMSE, MAE, R² evaluation metrics
+   * RMSE, MAE, R² evaluation metrics
 
 5. Interpretation
 
-Feature importance (model-based)
+- Feature importance (model-based)
 
-SHAP value plots (optional)
+- SHAP value plots (optional)
 
 6. Outputs
 
-UHI prediction maps
+- UHI prediction maps
 
-Actual vs Predicted LST/UHI comparison
+- Actual vs Predicted LST/UHI comparison
 
-Feature importance visualization
+- Feature importance visualization
 
-📊 Results (Expected)
+##📊 Results (Expected)
 
-XGBoost performs the best
+- XGBoost performs the best
 
-Impervious surface, NDVI, night lights, population density, and NDBI are top predictors
+- Impervious surface, NDVI, night lights, population density, and NDBI are top predictors
 
-Strong spatial patterns of UHI across central and dense regions of Delhi
+- Strong spatial patterns of UHI across central and dense regions of Delhi
 
-🧩 Technologies Used
+##🧩 Technologies Used
 
-Python
+- Python
 
-NumPy, Pandas
+- NumPy, Pandas
 
-Scikit-learn
+- Scikit-learn
 
-XGBoost, LightGBM, CatBoost
+- XGBoost, LightGBM, CatBoost
 
-Rasterio, GDAL, Geopandas
+- Rasterio, GDAL, Geopandas
 
-Matplotlib, Seaborn
+- Matplotlib, Seaborn
 
-📌 How to Run
+##📌 How to Run
 
-Clone the repository
+- Clone the repository
 
-Install dependencies
+          Install dependencies
+          
+          pip install -r requirements.txt
 
-pip install -r requirements.txt
 
+- Run preprocessing
 
-Run preprocessing
+- Train models via notebooks or scripts in /src
 
-Train models via notebooks or scripts in /src
+- Visualize outputs
 
-Visualize outputs
-
-📜 License
+##📜 License
 
 Open for academic, research, and educational use.
