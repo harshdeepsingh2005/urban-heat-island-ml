@@ -66,98 +66,98 @@ The following regression models were used:
 
 1. Data Preprocessing
 
-- Clip all rasters to Delhi boundary
+  - Clip all rasters to Delhi boundary
 
-- Reproject to common CRS
+  - Reproject to common CRS
 
-- Resample to 100m resolution
+  - Resample to 100m resolution
 
-- Create a 100m × 100m grid
+  - Create a 100m × 100m grid
 
-- Extract raster values for each grid cell
+  - Extract raster values for each grid cell
 
-- Merge all features into Final_Dataset.csv
+  - Merge all features into Final_Dataset.csv
 
 2. Target Creation
 
-- Urban Heat Island intensity is computed as:
+  - Urban Heat Island intensity is computed as:
 
-- UHI = LST_pixel – mean(LST_rural_reference)
+  - UHI = LST_pixel – mean(LST_rural_reference)
 
 3. Feature Engineering
 
-- NDVI, NDBI, NDWI generation
+  - NDVI, NDBI, NDWI generation
 
-- Impervious % extraction
+  - Impervious % extraction
 
-- Tree canopy %
+  - Tree canopy %
 
-- LULC one-hot encoding
+  - LULC one-hot encoding
 
-- Slope & aspect from DEM
+  - Slope & aspect from DEM
 
-- Population & night lights merging
+  - Population & night lights merging
 
 4. Model Training
 
-- Train using:
+  - Train using:
 
-   * Train-test split
+    * Train-test split
 
-   * Hyperparameter tuning
+    * Hyperparameter tuning
 
-   * RMSE, MAE, R² evaluation metrics
+    * RMSE, MAE, R² evaluation metrics
 
 5. Interpretation
 
-- Feature importance (model-based)
+  - Feature importance (model-based)
 
-- SHAP value plots (optional)
+  - SHAP value plots (optional)
 
 6. Outputs
 
-- UHI prediction maps
+  - UHI prediction maps
 
-- Actual vs Predicted LST/UHI comparison
+  - Actual vs Predicted LST/UHI comparison
 
-- Feature importance visualization
+  - Feature importance visualization
 
 ## 📊 Results (Expected)
 
-- XGBoost performs the best
+  - XGBoost performs the best
 
-- Impervious surface, NDVI, night lights, population density, and NDBI are top predictors
+  - Impervious surface, NDVI, night lights, population density, and NDBI are top predictors
 
-- Strong spatial patterns of UHI across central and dense regions of Delhi
+  - Strong spatial patterns of UHI across central and dense regions of Delhi
 
 ## 🧩 Technologies Used
 
-- Python
+  - Python
 
-- NumPy, Pandas
+  - NumPy, Pandas
 
-- Scikit-learn
+  - Scikit-learn
 
-- XGBoost, LightGBM, CatBoost
+  - XGBoost, LightGBM, CatBoost
 
-- Rasterio, GDAL, Geopandas
+  - Rasterio, GDAL, Geopandas
 
-- Matplotlib, Seaborn
+  - Matplotlib, Seaborn
 
 ## 📌 How to Run
 
-- Clone the repository
+  - Clone the repository
 
           Install dependencies
           
           pip install -r requirements.txt
 
 
-- Run preprocessing
+  - Run preprocessing
 
-- Train models via notebooks or scripts in /src
+  - Train models via notebooks or scripts in /src
 
-- Visualize outputs
+  - Visualize outputs
 
 ## 📜 License
 
