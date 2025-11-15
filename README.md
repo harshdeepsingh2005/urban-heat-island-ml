@@ -1,14 +1,15 @@
-#📘 Urban Heat Island Prediction in Delhi — Supervised Machine Learning Project
-##🔍 Overview
+# 📘 Urban Heat Island Prediction in Delhi — Supervised Machine Learning Project
+
+## 🔍 Overview
 
 This project builds a supervised machine learning model to predict Urban Heat Island (UHI) intensity across Delhi (India) using multi-source geospatial and environmental datasets.
 The model uses only supervised regression algorithms and focuses on identifying the key factors that drive heat intensity in urban environments.
 
-##🎯 Objective
+## 🎯 Objective
 
 To develop supervised machine learning models that accurately predict Urban Heat Island (UHI) intensity in Delhi using multi-layer geospatial data, and to quantify which environmental and urban features most strongly influence heat patterns.
 
-##🗂️ Datasets Used (10-Layer Geo Dataset)
+## 🗂️ Datasets Used (10-Layer Geo Dataset)
 
 This project integrates 10 high-quality datasets for Delhi:
 
@@ -34,7 +35,7 @@ This project integrates 10 high-quality datasets for Delhi:
 
 All datasets are clipped to the Delhi boundary and resampled to a 100m grid.
 
-##🧱 Project Structure
+## 🧱 Project Structure
 
           delhi-uhi-ml/
           │
@@ -45,7 +46,7 @@ All datasets are clipped to the Delhi boundary and resampled to a 100m grid.
           ├── models/             # trained supervised ML models
           └── README.md
 
-##🧪 Supervised Learning Models
+## 🧪 Supervised Learning Models
 
 The following regression models were used:
 
@@ -61,7 +62,7 @@ The following regression models were used:
 
 - CatBoost Regressor (optional)
 
-##🏗️ Methodology
+## 🏗️ Methodology
 
 1. Data Preprocessing
 
@@ -121,7 +122,7 @@ The following regression models were used:
 
 - Feature importance visualization
 
-##📊 Results (Expected)
+## 📊 Results (Expected)
 
 - XGBoost performs the best
 
@@ -129,7 +130,7 @@ The following regression models were used:
 
 - Strong spatial patterns of UHI across central and dense regions of Delhi
 
-##🧩 Technologies Used
+## 🧩 Technologies Used
 
 - Python
 
@@ -143,7 +144,7 @@ The following regression models were used:
 
 - Matplotlib, Seaborn
 
-##📌 How to Run
+## 📌 How to Run
 
 - Clone the repository
 
@@ -158,6 +159,6 @@ The following regression models were used:
 
 - Visualize outputs
 
-##📜 License
+## 📜 License
 
 Open for academic, research, and educational use.
